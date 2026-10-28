@@ -15,7 +15,7 @@ exports[`binary-produces > all binary produces variants generate Blob response t
 
 export interface ReportData {
   /** @format byte */
-  data?: Blob;
+  data?: string;
 }
 
 export interface ErrorResponse {

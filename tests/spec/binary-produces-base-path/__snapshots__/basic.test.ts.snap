@@ -15,7 +15,7 @@ exports[`binary-produces-base-path > binary export with path including basePath 
 
 export interface BinaryResponse {
   /** @format byte */
-  data?: Blob;
+  data?: string;
 }
 
 export interface ErrorResponse {

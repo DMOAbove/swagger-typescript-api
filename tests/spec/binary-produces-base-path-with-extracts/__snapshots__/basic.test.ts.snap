@@ -15,7 +15,7 @@ exports[`binary-produces-base-path-with-extracts > binary export with path inclu
 
 export interface BinaryResponse {
   /** @format byte */
-  data?: Blob;
+  data?: string;
 }
 
 export interface ErrorResponse {
@@ -29,79 +29,79 @@ export interface GetBinaryExportParams {
   user?: string;
 }
 
-/** @format byte */
+/** @format binary */
 export type GetBinaryExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetPdfExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetOctetExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetPngExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetZipExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetXZipExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetGzipExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetXGzipExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetXBzipExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetXBzip2ExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetTarExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetX7ZExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetXRarExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetRarExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetJarExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetEpubExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetDocExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetRtfExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetXBinaryExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetAbiwordExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetFreearcExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetDocxExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetOdsExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetMsFontObjectExportData = Blob;
 
-/** @format byte */
+/** @format binary */
 export type GetVisioExportData = Blob;
 
 export type QueryParamsType = Record<string | number, any>;

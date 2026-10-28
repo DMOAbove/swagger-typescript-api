@@ -394,7 +394,8 @@ export class CodeGenConfig {
 
       /** formats */
       binary: () => this.Ts.Keyword.File,
-      byte: () => this.Ts.Keyword.Blob,
+      /** base64-encoded characters, which JSON carries as a string; raw bytes are `binary` */
+      byte: () => this.Ts.Keyword.String,
       file: () => this.Ts.Keyword.File,
       "date-time": () => this.Ts.Keyword.String,
       time: () => this.Ts.Keyword.String,

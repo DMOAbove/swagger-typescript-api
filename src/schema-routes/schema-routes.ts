@@ -930,7 +930,7 @@ export class SchemaRoutes {
         }
       } else if (responseBodyInfo.success.isBinary) {
         /* Binary response with $ref or OAS3 content: emit type alias GetXxxData = Blob and use Blob in route (same as isBinarySuccessType in getResponseBodyInfo). */
-        const blobSchema = { type: "string", format: "byte" };
+        const blobSchema = { type: "string", format: "binary" };
         successResponse.schema = this.schemaParserFabric.createParsedComponent({
           schema: blobSchema,
           typeName,
@@ -939,6 +939,8 @@ export class SchemaRoutes {
         successResponse.schema.contentKind = contentKind;
         if (successResponse.schema.typeData) {
           successResponse.schema.typeData.isExtractedResponseBody = true;
+          /* No schema format maps to Blob (`binary` is File), so set the alias content directly. */
+          successResponse.schema.typeData.content = this.config.Ts.Keyword.Blob;
         }
         successResponse.type = this.config.Ts.Keyword.Blob;
 
